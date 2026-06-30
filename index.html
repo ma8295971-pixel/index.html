@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPP Terpadu: Harmoni Gunung Karang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* CSS KHUSUS GAYA PDF / CETAK */
+        @media print {
+            body { 
+                background-color: #ffffff !important; 
+                color: #000000 !important; 
+                font-size: 12pt !important;
+            }
+            .no-print { 
+                display: none !important; 
+            }
+            main { 
+                max-width: 100% !important; 
+                width: 100% !important; 
+                padding: 0 !important; 
+                margin: 0 !important;
+                display: block !important;
+            }
+            aside {
+                display: block !important;
+                width: 100% !important;
+                border: none !important;
+                border-bottom: 2px dashed #cbd5e1 !important;
+                padding-bottom: 20px !important;
+                margin-bottom: 30px !important;
+                box-shadow: none !important;
+            }
+            section {
+                width: 100% !important;
+            }
+            .bg-white { 
+                box-shadow: none !important; 
+                border: none !important; 
+                padding: 0 !important; 
+                margin-bottom: 40px !important;
+            }
+            .page-break {
+                page-break-before: always;
+            }
+            /* Menjaga tabel tetap rapi saat jadi PDF */
+            table { page-break-inside: avoid; }
+            tr { page-break-inside: avoid; page-break-after: auto; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-emerald-500 selection:text-white">
+
+    <header class="bg-gradient-to-r from-emerald-800 to-teal-700 text-white py-10 px-6 shadow-lg text-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-4xl mx-auto relative z-10">
+            <span class="bg-emerald-600 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full text-emerald-100">Model Pembelajaran Terpadu (Integrated Learning Model)</span>
+            <h1 class="text-3xl md:text-4xl font-extrabold mt-3 tracking-tight">RENCANA PELAKSANAAN PEMBELAJARAN (RPP) TERPADU</h1>
+            <p class="mt-2 text-emerald-100 text-sm max-w-2xl mx-auto opacity-90">
+                Tema: Harmoni Sains, Alam, dan Budaya di Gunung Karang
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 lg:grid-cols-4 gap-8">
+        
+        <aside class="lg:col-span-1 bg-white p-6 rounded-xl shadow-sm border border-slate-100 h-fit lg:sticky lg:top-6">
+            <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4 border-b pb-1">Identitas Modul</h3>
+            <div class="space-y-4 text-sm">
+                <div>
+                    <span class="block text-xs text-slate-500 font-medium">Mata Pelajaran Terpadu:</span>
+                    <span class="font-semibold text-slate-700 flex items-center gap-1.5 mt-0.5">
+                        <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>IPA (Sains) <br>
+                        <span class="w-1.5 h-1.5 rounded-full bg-purple-500"></span>SBdP (Seni Musik) <br>
+                        <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>IPS (Kearifan Lokal)
+                    </span>
+                </div>
+                <div>
+                    <span class="block text-xs text-slate-500 font-medium">Fase / Kelas:</span>
+                    <span class="font-semibold text-slate-700">Fase D / Kelas VII atau VIII</span>
+                </div>
+                <div>
+                    <span class="block text-xs text-slate-500 font-medium">Alokasi Waktu:</span>
+                    <span class="font-semibold text-slate-700">3 JP (3 x 40 Menit)</span>
+                </div>
+                <div class="pt-4 border-t border-slate-100">
+                    <span class="block text-xs text-slate-500 font-medium mb-2">Fokus Integrasi Etnosains:</span>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="bg-blue-50 text-blue-700 text-xs px-2.5 py-1 rounded border border-blue-100 font-medium">Gelombang Bunyi</span>
+                        <span class="bg-purple-50 text-purple-700 text-xs px-2.5 py-1 rounded border border-purple-100 font-medium">Rampak Bedug</span>
+                        <span class="bg-amber-50 text-amber-700 text-xs px-2.5 py-1 rounded border border-amber-100 font-medium">Mitigasi Perubahan Musim</span>
+                    </div>
+                </div>
+
+                <div class="pt-4 border-t border-slate-100 no-print">
+                    <button onclick="window.print()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold py-3 px-4 rounded-xl transition-all shadow-md flex items-center justify-center gap-2 animate-pulse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+                        Download / Cetak PDF Sekarang
+                    </button>
+                    <p class="text-[10px] text-center text-slate-400 mt-2">Saran: Pilih opsi "Save as PDF" saat dialog cetak terbuka.</p>
+                </div>
+            </div>
+        </aside>
+
+        <section class="lg:col-span-3 space-y-10">
+            
+            <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-slate-100">
+                <h2 class="text-lg font-bold text-slate-900 flex items-center gap-2 mb-4 pb-2 border-b border-slate-100">
+                    <span class="w-1.5 h-5 bg-emerald-600 rounded"></span> A. Capaian Pembelajaran Terpadu
+                </h2>
+                <div class="space-y-3 text-sm text-slate-700">
+                    <p class="leading-relaxed"><strong class="text-blue-700">1. Dimensi Sains (IPA):</strong> Peserta didik mampu menganalisis sifat-sifat gelombang bunyi, proses perambatannya di udara, hingga mekanisme getaran diterima oleh organ pendengaran manusia (telinga).</p>
+                    <p class="leading-relaxed"><strong class="text-purple-700">2. Dimensi Estetika & Budaya (SBdP):</strong> Peserta didik mampu mengidentifikasi pola irama, fungsi instrumen musik tradisional Rampak Bedug sebagai alat komunikasi, serta mengapresiasi warisan tradisi budaya lokal.</p>
+                    <p class="leading-relaxed"><strong class="text-amber-700">3. Dimensi Kontekstual & Sosial (IPS):</strong> Peserta didik mampu menghubungkan aktivitas sosial-budaya masyarakat lereng Gunung Karang (ritual/kearifan lokal) dengan fenomena alam masa transisi musim hujan.</p>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-slate-100 page-break">
+                <h2 class="text-lg font-bold text-slate-900 flex items-center gap-2 mb-6 pb-2 border-b border-slate-100">
+                    <span class="w-1.5 h-5 bg-emerald-600 rounded"></span> B. Kegiatan Pembelajaran (Model Terpadu)
+                </h2>
+                
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-sm flex justify-between">
+                            <span>1. Tahap Orientasi & Stimulasi Kontekstual</span>
+                            <span class="font-mono text-xs text-slate-500">(15 Menit)</span>
+                        </h4>
+                        <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                            Pendidik memutar rekaman audio/video pementasan Rampak Bedug di lereng Gunung Karang bersamaan dengan datangnya awan mendung. Peserta didik diajak mengamati sinkronisasi fenomena alam dan respons budaya.
+                        </p>
+                        <p class="text-xs italic text-emerald-700 mt-1 font-semibold">Pertanyaan Pemantik: "Bagaimana getaran dari kulit bedug di atas gunung bisa sampai ke telinga kita di kaki gunung? Mengapa pola tabuhannya berubah saat menyambut datangnya hujan?"</p>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-sm flex justify-between">
+                            <span>2. Merumuskan Masalah & Hipotesis</span>
+                            <span class="font-mono text-xs text-slate-500">(15 Menit)</span>
+                        </h4>
+                        <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                            Membimbing kelompok merumuskan dugaan sementara mengenai hubungan ketebalan kulit bedug, kekuatan pukulan (amplitudo), jarak rambat gelombang longitudinal melalui partikel udara, hingga diterima organ koklea telinga.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-sm flex justify-between mb-2">
+                            <span>3. Eksplorasi & Pengumpulan Data Multidisiplin</span>
+                            <span class="font-mono text-xs text-slate-500">(30 Menit)</span>
+                        </h4>
+                        <div class="overflow-x-auto border border-slate-200 rounded-lg">
+                            <table class="w-full text-left text-[11px] border-collapse">
+                                <thead class="bg-slate-50 text-slate-700 font-semibold border-b border-slate-200">
+                                    <tr>
+                                        <th class="p-2.5 w-1/3">Konteks Budaya & Alam</th>
+                                        <th class="p-2.5 w-1/3">Perspektif IPA (Sains)</th>
+                                        <th class="p-2.5 w-1/3">Perspektif Seni & Sosial</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-100 text-slate-600 bg-white">
+                                    <tr>
+                                        <td class="p-2.5 font-medium text-slate-800">Kulit bedug dipukul kencang</td>
+                                        <td class="p-2.5">Menghasilkan amplitudo besar, energi bunyi semakin kuat dan nyaring.</td>
+                                        <td class="p-2.5">Dinamika musik Forte (keras), penanda antusiasme warga berkumpul.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2.5 font-medium text-slate-800">Gemuruh bunyi sampai ke telinga</td>
+                                        <td class="p-2.5">Perambatan gelombang longitudinal menggunakan medium partikel udara.</td>
+                                        <td class="p-2.5">Musik berfungsi sebagai media komunikasi massa tradisional.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2.5 font-medium text-slate-800">Suara bedug saat mendung/hujan</td>
+                                        <td class="p-2.5">Tingkat kelembapan dan kerapatan udara memengaruhi kecepatan rambat bunyi.</td>
+                                        <td class="p-2.5">Simbol kesiapan komunitas petani lereng gunung menyambut musim tanam.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-sm flex justify-between">
+                            <span>4. Pengujian Hipotesis & Evaluasi Terintegrasi</span>
+                            <span class="font-mono text-xs text-slate-500">(20 Menit)</span>
+                        </h4>
+                        <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                            Peserta didik melakukan kuis kelompok interaktif untuk mengevaluasi pemahaman materi gelombang bunyi (frekuensi audiosonik) serta mengidentifikasi anatomi bagian dalam telinga.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-sm flex justify-between">
+                            <span>5. Refleksi Bermakna & Penutup</span>
+                            <span class="font-mono text-xs text-slate-500">(40 Menit)</span>
+                        </h4>
+                        <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                            Peserta didik menyusun konklusi akhir bahwa sains bukan sekadar teori laboratorium, melainkan menyatu di dalam kearifan lokal kebudayaan nusantara dalam membaca tanda-tanda alam ciptaan Tuhan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-slate-100 page-break">
+                <h2 class="text-lg font-bold text-slate-900 flex items-center gap-2 mb-4 pb-2 border-b border-slate-100">
+                    <span class="w-1.5 h-5 bg-emerald-600 rounded"></span> C. Strategi Evaluasi / Asesmen Terpadu
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                    <div class="p-3 bg-slate-50 rounded-lg border-l-4 border-blue-500">
+                        <h4 class="font-bold text-slate-800 mb-1">Asesmen Kognitif (Sains)</h4>
+                        <p class="text-slate-600">Tes pilihan ganda/uraian mengenai pemahaman struktur anatomi telinga, fungsi tulang pendengaran, dan perambatan gelombang.</p>
+                    </div>
+                    <div class="p-3 bg-slate-50 rounded-lg border-l-4 border-purple-500">
+                        <h4 class="font-bold text-slate-800 mb-1">Asesmen Produk (Kreativitas)</h4>
+                        <p class="text-slate-600">Penilaian karya infografis atau peta konsep yang mengilustrasikan alur konversi getaran fisik bedug hingga diolah otak.</p>
+                    </div>
+                    <div class="p-3 bg-slate-50 rounded-lg border-l-4 border-amber-500">
+                        <h4 class="font-bold text-slate-800 mb-1">Asesmen Sikap (Sosial-Spiritual)</h4>
+                        <p class="text-slate-600">Observasi kepekaan siswa terhadap pelestarian seni tradisional, kerja sama tim, dan kepedulian menjaga kesehatan telinga.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 text-[10px] py-6 text-center mt-20 no-print">
+        <p>&copy; 2026 Modul Pembelajaran Terpadu Etnosains Nusantara. Didesain untuk Efisiensi & Kemudahan Cetak Dokumen.</p>
+    </footer>
+
+</body>
+</html>
+
